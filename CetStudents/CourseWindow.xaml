@@ -1,0 +1,27 @@
+﻿<Window x:Class="CetStudents.CourseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CetStudents"
+        mc:Ignorable="d"
+        Title="CourseWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <StackPanel Margin="10">
+        <Label Content="Ders Kodu" Name="lblCourseIdShow"/>
+        <TextBox Text="" TextWrapping="Wrap" Name="txtCourseId"/>
+        <Label Content="Ders Adı" Name="lblCourseNameShow"/>
+        <TextBox Text="" TextWrapping="Wrap" Name="txtCourseName" />
+        <Label Content="Maksimum Öğrenci Sayısı" Name="lblCourseQuotaShow"/>
+        <TextBox Text="" TextWrapping="Wrap" Name="txtCourseQuota" />
+        <Label Content="Ders Kredisi" Name="lblCourseCreditShow"/>
+        <TextBox Text="" TextWrapping="Wrap" Name="txtCourseCredit" />
+        <Button Content="Ekle" Name="btnSave" Click="Button_Click"/>
+        <Button Content="Güncelle" Name="btnUpdate" Click="btnUpdate_Click"></Button>
+
+        <Button Content="Sil" Name="btnDelete" Click="btnDelete_Click"></Button>
+        <DataGrid Name="dgStudents" Height="311" SelectedCellsChanged="dgStudents_SelectedCellsChanged"/>
+
+
+
+    </StackPanel>
+</Window>
